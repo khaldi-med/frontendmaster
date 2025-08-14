@@ -1,0 +1,110 @@
+body {
+    box-sizing: border-box;
+}
+h1 {
+    justify-content: center;
+    color: #333;
+    display: flex;
+    font-size: 40px;
+    margin-top: 1.5em;
+}
+h2 {
+    color: #1d1c1a;
+    font-style: italic;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    margin-bottom: 1.5em;
+    word-spacing: 0.2em;
+    text-align: center;
+    flex-wrap: wrap;
+}
+p {
+    color: #373636;
+    margin: 0 30px 20px 30px;
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 1.2em;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2em auto;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    color: dimgray;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+.sidebar {
+    grid-area: sidebar;
+    padding: 10px;
+    border: 2px solid #1d1c1a;
+}
+.student {
+    grid-area: student;
+    padding: 10px;
+    border: 2px solid #1d1c1a;
+    border-top: none;
+    border-right: none;
+}
+.css {
+    grid-area: css;
+    padding: 10px;
+    border: 2px solid #1d1c1a;
+    border-top: none;
+}
+.luna {
+    grid-area: luna;
+    padding: 10px;
+    border: 2px solid #1d1c1a;
+    border-top: none;
+    border-right: none;
+}
+.coffee {
+    grid-area: coffee;
+    padding: 10px;
+    border: 2px solid #1d1c1a;
+    border-top: none;
+}
+.brian {
+    grid-area: brian;
+    padding: 10px;
+    border: 2px solid #1d1c1a;
+    border-top: none;
+    border-right: none;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+        "sidebar sidebar sidebar"
+        "student luna  css"
+        "brian coffee coffee";
+}
+@media screen and (max-width: 560px) {
+    .container {
+        grid-template-areas:
+            "sidebar"
+            "student"
+            "luna"
+            "css"
+            "brian"
+            "coffee";
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+}
