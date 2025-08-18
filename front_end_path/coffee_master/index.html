@@ -4,75 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee Shop</title>
 </head>
 
 <body>
-    <header>
+    <nav class="nav">
         <h2>Coffee Shop</h2>
         <img src="./coffee_masters_logo.png" alt="Coffee Shop logo">
-    </header>
-    <main>
-        <section>
-            <h1>Welcome to Our Coffee Shop</h1>
-            <p>We serve the best coffee in town.</p>
-
+    </nav>
+    <div class="main-content">
+        <section class="item_price">
+            <h3>ITEMS</h3>
+            <ul class="items">
+                <li>1x Cappuccino </li>
+                <li>$3.00</li>
+                <li>Light Foam</li>
+            </ul>
+            <ul class="items">
+                <li>1x Cappuccino </li>
+                <li>$4.00</li>
+                <li>Almond Milk</li>
+            </ul>
+            <ul class="items">
+                <li>1x Croissant </li>
+                <li>$4.50 </li>
+                <li>Butter</li>
+            </ul>
         </section>
+        <section class="info">
+            <div class="for_name">
+                <p>Name</p>
+                <label for="name">Name for order</label>
+                <input type="text" name="order_name" id="name">
+            </div>
+            <div class="payment">
+                <p>PAYMENT</p>
+                <label for="card_number">Card number</label>
+                <input type="text" name="card_number" id="card_number">
+                <label for="CCV_number">CCV number</label>
+                <input type="text" name="CCV" id="CCV_number">
+            </div>
+        </section>
+        <section class="order_summary">
+            <h3>ORDER SUMMARY</h3>
+            <div class="summary">
+                <ul>
+                    <li> Subtotal:</li>
+                    <li> Tax:</li>
+                    <li> Total:</li>
+                </ul>
+                <ul>
+                    <li>$12.50</li>
+                    <li>$1.25</li>
+                    <li>$13.75</li>
+                </ul>
 
-    </main>
-    <section class="item_price">
-        <h3>ITEMS</h3>
-        <ul>
-            <li>1x Cappuccino </li>
-            <li>$3.00</li>
-            <li>Light Foam</li>
-        </ul>
-        <ul>
-            <li>1x Cappuccino </li>
-            <li>$4.00</li>
-            <li>Almond Milk</li>
-            <li>Double Espresso Shot</li>
-        </ul>
-        <ul>
-            <li>1x Croissant </li>
-            <li>$4.50 </li>
-            <li>Butter</li>
-        </ul>
-    </section>
-    <section class="info">
-        <div class="for_name">
-            <p>Name</p>
-            <label for="name">Name for order</label>
-            <input type="text" name="order_name" id="name">
-        </div>
-        <div class="payment">
-            <p>PAYMENT</p>
-            <label for="card_number">Card number</label>
-            <input type="text" name="card_number" id="card_number">
-            <label for="CCV_number">CCV number</label>
-            <input type="text" name="CCV" id="CCV_number">
-        </div>
-    </section>
-    <section class="order_summary">
-        <div class="summary">
-            <p>Order Summary</p>
-            <ul>
-                <li> Subtotal:</li>
-                <li>$12.50</li>
-            </ul>
-            <ul>
-                <li> Tax:</li>
-                <li>$1.25</li>
-            </ul>
-            <ul>
-                <li> Total:</li>
-                <li>$13.75</li>
-            </ul>
-        </div>
-        <div class="button">
-            <button type="submit">Place Order</button>
-        </div>
-    </section>
+            </div>
+            <div class="button">
+                <button type="submit">Place Order</button>
+            </div>
+        </section>
+        </main>
 </body>
 
 </html>

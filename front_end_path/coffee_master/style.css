@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #43281c;
+    --secondary-color: #d9cfcf;
+    --font-family: "'Open Sans', sans-serif";
+    --font-size: 16px;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+}
+.nav {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px;
+    display: flex;
+    width: auto;
+    flex-direction: row-reverse;
+    left: auto;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 30px;
+    height: auto;
+    display: block;
+    margin: 0 10px;
+    padding: 0;
+}
+h2 {
+    font-family: var(--font-family);
+    font-size: 1.9em;
+    margin: 0;
+    color: #fbf2c0;
+}
+.main-content {
+    display: grid;
+    grid-template-areas: "price info" "summary summary";
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    column-gap: 20px;
+}
+.item_price {
+    grid-area: price;
+    padding: 3%;
+    margin: 20px;
+    width: 40vh;
+    border-radius: 15px;
+    background-color: #eedfd2;
+}
+.item_price h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #885a2d;
+}
+.items {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+    border-bottom: 2px solid #c07e3d;
+    margin: 20px auto;
+    padding: 0;
+}
+li {
+    list-style: none;
+
+    font-size: 1.2rem;
+    color: #131313;
+    font-family: var(--font-family);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.info {
+    grid-area: info;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #eedfd2;
+}
+.order_summary {
+    grid-area: summary;
+    padding: 20px;
+    margin: 0;
+}
+.order_summary h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #885a2d;
+}
+.summary {
+    grid-area: summary;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    border-radius: 15px;
+}
+.summary ul {
+    padding: 0;
+    margin: 20px 0;
+}
+.summary li {
+    margin-bottom: 30px;
+}
+button {
+    border: 1px solid #885a2d;
+    padding: 10px 40%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #885a2d;
+    color: #ffead4;
+    text-decoration: none;
+    font-size: 1em;
+}
