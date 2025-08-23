@@ -1,8 +1,7 @@
 :root {
     --primary-color: #43281c;
     --secondary-color: #d9cfcf;
-    --font-family: "'Open Sans', sans-serif";
-    --font-size: 16px;
+    --font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -10,11 +9,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #efefef;
+    font-family: var(--font-family);
 }
 .nav {
     background-color: var(--primary-color);
     color: white;
-    padding: 30px;
+    padding: 1em;
     display: flex;
     width: auto;
     flex-direction: row-reverse;
@@ -32,7 +32,6 @@ img {
     padding: 0;
 }
 h2 {
-    font-family: var(--font-family);
     font-size: 1.9em;
     margin: 0;
     color: #fbf2c0;
@@ -40,69 +39,127 @@ h2 {
 .main-content {
     display: grid;
     grid-template-areas: "price info" "summary summary";
-    grid-template-columns: 1fr 2fr;
-    gap: 50px;
-    column-gap: 20px;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 0;
+    row-gap: 0px;
 }
 .item_price {
     grid-area: price;
-    padding: 3%;
-    margin: 20px;
-    width: 40vh;
+    padding: 1.1em;
+    margin: 10px 5px;
+    width: auto;
+    height: 400px;
     border-radius: 15px;
     background-color: #eedfd2;
 }
 .item_price h3 {
-    margin: 0;
-    font-size: 1em;
     color: #885a2d;
+    margin: 0;
 }
-.items {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 20px;
-    border-bottom: 2px solid #c07e3d;
-    margin: 20px auto;
-    padding: 0;
+.item {
+    color: #885a2d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
 li {
     list-style: none;
-
-    font-size: 1.2rem;
     color: #131313;
-    font-family: var(--font-family);
-    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+}
+.subitem {
+    border-bottom: 2px solid #c07e3d;
+    color: #885a2d;
+    display: flex;
+    flex-direction: column;
+}
+.subitem li {
+    color: #885a2d;
     font-weight: bold;
 }
-.info {
+.order {
     grid-area: info;
-    margin: 20px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 20px;
     border-radius: 15px;
+}
+.for_name {
+    width: auto;
+    height: auto;
     background-color: #eedfd2;
+    border-radius: 15px;
+    padding: 20px;
+}
+.for_name p {
+    color: #885a2d;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+.for_name input {
+    border: 2px solid #885a2d;
+    padding: 10px;
+    border-radius: 20px;
+    width: 90%;
+    font-size: 0.5em;
+}
+
+.for_name label {
+    color: #885a2d;
+    font-size: 1em;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.payment {
+    background-color: #eedfd2;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 0;
+}
+.payment p {
+    color: #885a2d;
+    font-size: 1.2em;
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+.payment input {
+    border: 2px solid #885a2d;
+    padding: 10px;
+    border-radius: 20px;
+    min-width: 80%;
+    font-size: 1em;
+}
+
+.payment label {
+    color: #885a2d;
+    display: block;
+    margin-top: 10px;
+    font-family: var(--font-family);
 }
 .order_summary {
     grid-area: summary;
-    padding: 20px;
     margin: 0;
-}
-.order_summary h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #885a2d;
 }
 .summary {
-    grid-area: summary;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
-    border-radius: 15px;
+    grid-template-columns: 2fr 2fr;
 }
 .summary ul {
     padding: 0;
-    margin: 20px 0;
+    text-align: center;
 }
 .summary li {
-    margin-bottom: 30px;
+    margin-bottom: 1px;
+    color: #885a2d;
+    font-size: 1em;
 }
 button {
     border: 1px solid #885a2d;
@@ -112,6 +169,15 @@ button {
     border-radius: 10px;
     background-color: #885a2d;
     color: #ffead4;
-    text-decoration: none;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-family: var(--font-family);
+}
+@media screen and (max-width: 760px) {
+    .nav {
+        flex-direction: column;
+    }
+    .main-content {
+        grid-template-areas: "price" "info" "summary";
+        grid-template-columns: 1fr;
+    }
 }

@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Coffee Shop</title>
 </head>
 
@@ -15,27 +21,37 @@
     </nav>
     <div class="main-content">
         <section class="item_price">
-            <h3>ITEMS</h3>
-            <ul class="items">
-                <li>1x Cappuccino </li>
+            <h3 class="item_title">ITEMS</h3>
+            <ul class="item">
+                <li>1x</li>
+                <li>Cappuccino </li>
                 <li>$3.00</li>
+            </ul>
+            <ul class="item subitem">
                 <li>Light Foam</li>
             </ul>
-            <ul class="items">
-                <li>1x Cappuccino </li>
+            <ul class="item">
+                <li>1x</li>
+                <li>Cappuccino </li>
                 <li>$4.00</li>
-                <li>Almond Milk</li>
             </ul>
-            <ul class="items">
-                <li>1x Croissant </li>
+            <ul class="item subitem">
+                <li>Almond Milk</li>
+                <li>Double Espresso Shot</li>
+            </ul>
+            <ul class="item">
+                <li>1x</li>
+                <li>Croissant </li>
                 <li>$4.50 </li>
+            </ul>
+            <ul class="item subitem">
                 <li>Butter</li>
             </ul>
         </section>
-        <section class="info">
+        <section class="info order">
             <div class="for_name">
                 <p>Name</p>
-                <label for="name">Name for order</label>
+                <label class="name_label" for="name">Name for order</label>
                 <input type="text" name="order_name" id="name">
             </div>
             <div class="payment">
@@ -47,7 +63,6 @@
             </div>
         </section>
         <section class="order_summary">
-            <h3>ORDER SUMMARY</h3>
             <div class="summary">
                 <ul>
                     <li> Subtotal:</li>
@@ -65,7 +80,7 @@
                 <button type="submit">Place Order</button>
             </div>
         </section>
-        </main>
+    </div>
 </body>
 
 </html>
