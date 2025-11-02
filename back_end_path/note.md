@@ -21,8 +21,19 @@
 * npm init
 * npm install
 * npm install -g nodemon
-
+* you can add a cli for your .json file by adding "bin"{"cli": "file-path"
 ### Database
+
+* MongoDB
+
+> use <dbname> 
+
+> db.${dbname}.insertOne
+
+> db.${dbname}.help
+
+> db.pets.count({type: "bird", $and: [{ age: { $gte:10 }}, {age: {$lte: 20}}]})
+
 
 ### loader blancer 
 `
