@@ -21,7 +21,8 @@
 * npm init
 * npm install
 * npm install -g nodemon
-* you can add a cli for your .json file by adding "bin"{"cli": "file-path"
+* you can add a cli for your .json file by adding "bin"{"cli": "file-path"i} and run **node link cmd**
+*  
 ### Database
 
 * MongoDB
