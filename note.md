@@ -42,4 +42,22 @@
 * What is the purpose of the package-lock.json file?
     `The package-lock.json file locks in the exact versions of installed dependencies, ensuring that the same versions are used across different machines and team members.`
 
-    
+* What is the purpose of converting a callback-based function to a Promise?
+    `To allow easier chaining of asynchronous operations, keeping callback depth to one level and making the code more readable and manageable`
+  
+*  What are the requirements for using await in a function?
+    `The function must be marked as async, and the value being awaited must return a Promise`
+
+* What does JSON.stringify() do when saving a database file?
+    `JSON.stringify() converts a JavaScript object into a JSON string, which can then be written to a file. When additional arguments like 2 are used, it formats the JSON with indentation for readability`
+
+* Why can't fs.appendFile() be used directly for adding JSON data?
+    `appendFile() doesn't understand JSON structure and would simply add data to the bottom of the file, which would break the JSON format and make parsing impossible`
+
+* What is the purpose of using file system methods with promises in Node.js?
+    `Using file system methods with promises allows for asynchronous file operations that are non-blocking, making file reading and writing more efficient`
+
+* What is an ORM in the context of database interactions?
+    `An ORM (Object-Relational Mapping) is like an SDK for databases that provides an abstraction layer, allowing developers to interact with databases without writing raw SQL or low-level database commands`
+
+*     
