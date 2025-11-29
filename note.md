@@ -60,4 +60,13 @@
 * What is an ORM in the context of database interactions?
     `An ORM (Object-Relational Mapping) is like an SDK for databases that provides an abstraction layer, allowing developers to interact with databases without writing raw SQL or low-level database commands`
 
+*  What is the purpose of mocking in unit testing?   
+    `Mocking allows replacing a function or dependency with a stub or alternative version, typically a function that does nothing, to isolate the unit being tested and avoid testing external dependencies like databases or complex functions.`
+ 
+ * What is a 'spy' in testing context?
+    `A spy is a function that tracks and records its interactions, such as how many times it was called, what arguments it received, and who called it, enabling detailed test expectations about function behavior.`
+
+* Why are dynamic imports used in testing with ESM modules?
+    `Dynamic imports (using import as a function with await) are necessary to mock modules before importing them, which is required in the new ESM syntax to ensure mocking works correctly before module loading.`
+
 *     
